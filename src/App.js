@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Services from "../../sapphire/src/components/Services";
+import Contact from "./components/Contact";
+import Projects from "./components/Projects";
+import AboutUs from "./components/AboutUs";
+import { Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
+
+// import { library } from "@fortawesome/fontawesome-svg-core";
+// import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+// library.add(faArrowUp);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 

@@ -1,0 +1,93 @@
+/* Menu.css */
+.menu {
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+
+.menu-toggle {
+  align-self: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-drawer {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  transition: top 0.3s ease;
+  z-index: 1;
+}
+
+.menu-drawer.open {
+  top: 0;
+}
+
+.menu-drawer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 50px 0 0 20px;
+}
+
+.list-items-container {
+  position: absolute;
+  width: 45%;
+  top: 4vh;
+}
+.menu-drawer li .list-item {
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+
+.hamburger-menu {
+  width: 10px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.bar {
+  width: 70%;
+  height: 3px;
+  background-color: black;
+  transition: transform 0.3s ease;
+}
+
+.hamburger-menu.active {
+  position: relative;
+  left: 7px;
+}
+
+.hamburger-menu.active .bar:nth-child(1) {
+  transform: rotate(45deg) translateY(12px);
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translateY(-12px);
+}
+
+@media screen and (max-width: 600px) {
+  .menu-drawer {
+    justify-content: flex-start;
+  }
+  .list-items-container {
+    position: absolute;
+    width: 100%;
+    top: 4vh;
+    left: 10vw;
+  }
+}
