@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Hide scrollbar track (the area behind the scrollbar) */
+::-webkit-scrollbar-track {
+  /* display: none; */
+  background-color: lightgrey;
+}
+
+/* Style the scrollbar thumb (the draggable handle) */
+::-webkit-scrollbar-thumb {
+  background-color: darkgray; /* Change the color of the scrollbar thumb */
+  border-radius: 10px; /* Add border radius to make it slightly rounded */
+}
+
+/* Optional: Style scrollbar buttons (arrows) */
+::-webkit-scrollbar-button {
+  display: none; /* Hide scrollbar buttons */
+}
+
+:root {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  :root {
+    font-size: 32px;
+  }
+}

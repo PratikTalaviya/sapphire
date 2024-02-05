@@ -1,0 +1,12 @@
+.social-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.icons {
+  font-size: 1.2rem;
+}
