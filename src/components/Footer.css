@@ -1,9 +1,16 @@
 .main-footer-container {
-  height: 35vh;
+  /* height: 35vh; */
   background-color: lightgoldenrodyellow;
+  background-image: url(../images/Final.png);
+  background-size: 75vw;
+  backdrop-filter: sepia(100%);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-blend-mode: multiply;
   display: flex;
   flex-direction: column;
-  padding: 3% 6%;
+  gap: 1.5rem;
+  padding: 5% 5rem 2%;
 }
 .footer-container {
   display: flex;
@@ -13,11 +20,16 @@
 }
 .logo-container-footer,
 .links-container,
-.social-links-footer {
+.contact-info-footer {
   width: 33.333%;
   display: flex;
+  flex-direction: column;
+  /* gap: 0.5rem; */
   justify-content: center;
   align-items: center;
+}
+.contact-info-footer {
+  align-items: flex-end;
 }
 .logo-footer {
   width: 8rem;
@@ -29,21 +41,87 @@
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-self: center;
   font-weight: bold;
   gap: 2rem;
+  row-gap: 0.5rem;
   font-size: 1rem;
   line-height: 1.53rem;
   width: 100%;
   margin: 0;
   padding: 0;
 }
+.links-items > li {
+  width: 4.6rem;
+}
 .footer-links {
+  /* width: 5rem; */
   text-decoration: none;
+  text-transform: uppercase;
   color: #000;
 }
 .copywrite-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.copywrite-resizer {
+  display: flex;
+  width: 33.33%;
+}
+.devloper-align {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+@media screen and (max-width: 550px) {
+  .main-footer-container {
+    justify-content: space-between;
+    height: 40vh;
+    padding: 2rem 1.2rem 1rem;
+    background-size: cover;
+  }
+  .footer-container {
+    position: relative;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer-links {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .links-container {
+    margin-left: 15%;
+  }
+  .links-items {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .logo-container-footer {
+    position: absolute;
+    gap: 0.5rem;
+    left: 55%;
+    top: 7%;
+  }
+  .contact-info-footer {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .copywrite-container {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 0.3rem;
+  }
+  .copywrite-resizer {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .social-position {
+    position: absolute;
+    bottom: 130%;
+  }
 }

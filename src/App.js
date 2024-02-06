@@ -8,10 +8,6 @@ import AboutUs from "./components/AboutUs";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 
-// import { library } from "@fortawesome/fontawesome-svg-core";
-// import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
-// library.add(faArrowUp);
-
 function App() {
   return (
     <>

@@ -3,10 +3,10 @@
   margin: 0;
 }
 
-.copywrite-content a {
+.copywrite-content > a {
   color: #000;
 }
 
-.copywrite-content a:hover {
+.copywrite-content > a:hover {
   color: grey;
 }
