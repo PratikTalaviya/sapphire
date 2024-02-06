@@ -5,7 +5,9 @@ export default function Copywrite(props) {
   return (
     <p className="copywrite-content">
       {props.content}
-      <a href={props.link}>{props.devloper}</a>
+      <a href={props.link} target="_blank" rel="noreferrer">
+        {props.devloper}
+      </a>
     </p>
   );
 }

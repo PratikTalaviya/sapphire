@@ -1,10 +1,10 @@
 .social-links-container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-self: center;
   gap: 1rem;
-  width: 100%;
+  width: auto;
 }
 
 .icons {

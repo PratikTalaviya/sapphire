@@ -11,9 +11,9 @@ export default function SocialMedia() {
     <div className="social-links-container">
       <FaLinkedinIn className="icons" />
       <FaInstagram className="icons" />
+      <FaFacebookF className="icons" />
       <FaBehance className="icons" />
       <FaXTwitter className="icons" />
-      <FaFacebookF className="icons" />
     </div>
   );
 }
