@@ -89,7 +89,7 @@ export default function Header() {
       <Link to="/" className="text">
         <div className="logo-container">
           <div className={`logo ${isScrolled ? "scrolled-logo" : ""}`}></div>
-          <h2 className={`website-name ${isScrolled ? "scrolled-title" : ""}`}>Sapphire Consultants</h2>
+          <h1 className={`website-name ${isScrolled ? "scrolled-title" : ""}`}>Sapphire Consultants</h1>
         </div>
       </Link>
       <Menu />
