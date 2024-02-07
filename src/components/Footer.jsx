@@ -40,8 +40,8 @@ export default function Footer() {
               </Link>
             </div>
             <div className="contact-info-footer">
-              <Copywrite content="+91 9898979797" devloper="" link="" />
-              <Copywrite content="sapphire.contact@gmail.com" devloper="" link="" />
+              <Copywrite className="contact-info" content="+91 9898979797" devloper="" link="" />
+              <Copywrite className="contact-info" content="sapphire.contact@gmail.com" devloper="" link="" />
             </div>
           </div>
           <div className="copywrite-container">
