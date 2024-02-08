@@ -82,9 +82,10 @@
 @media screen and (max-width: 550px) {
   .main-footer-container {
     justify-content: space-between;
-    height: 40vh;
+    /* height: 40vh; */
     padding: 2rem 1.2rem 1rem;
     background-size: cover;
+    gap: 2.8rem;
   }
   .footer-container {
     position: relative;

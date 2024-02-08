@@ -1,0 +1,19 @@
+.btn {
+  border: 2px solid #e6b31e;
+  padding: 0.5rem 1.5rem;
+  padding-top: 0.6rem;
+  font-size: 1rem;
+  color: #e6b31e;
+  border-radius: 9999px;
+  background-color: transparent;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+/* .btn-link {
+  text-decoration: none;
+  /* color: lightgoldenrodyellow; */
+.btn:hover {
+  background-color: #e6b31e;
+  color: white;
+  transition: all 0.4s;
+}

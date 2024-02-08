@@ -40,6 +40,9 @@
   background-color: black;
   transition: all 0.3s ease;
 }
+/* .logo > img {
+  width: 100%;
+} */
 
 .scrolled-logo {
   width: 2.4rem;
@@ -54,11 +57,6 @@
 
 .scrolled-title {
   font-size: 1.2rem;
-}
-
-.hamburger-menu {
-  width: 50px;
-  aspect-ratio: 1;
 }
 
 .scroll-to-top {

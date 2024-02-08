@@ -55,6 +55,7 @@ import Menu from "./Menu";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
+import logo from "../images/logo.png";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -88,7 +89,9 @@ export default function Header() {
     <header className={`header-container ${isScrolled ? "scrolled" : ""}`}>
       <Link to="/" className="text">
         <div className="logo-container">
-          <div className={`logo ${isScrolled ? "scrolled-logo" : ""}`}></div>
+          {/* <div className={`logo ${isScrolled ? "scrolled-logo" : ""}`}> */}
+          <img src={logo} alt="logo" className={`logo ${isScrolled ? "scrolled-logo" : ""}`} />
+          {/* </div> */}
           <h1 className={`website-name ${isScrolled ? "scrolled-title" : ""}`}>Sapphire Consultants</h1>
         </div>
       </Link>

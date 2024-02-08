@@ -3,6 +3,7 @@ import Copywrite from "./Copywrite";
 import "./Footer.css";
 import SocialMedia from "./SocialMedia";
 import { Link } from "react-router-dom";
+import logo from "../images/logo.png";
 
 export default function Footer() {
   return (
@@ -36,7 +37,8 @@ export default function Footer() {
             </div>
             <div className="logo-container-footer">
               <Link to="/">
-                <div className="logo-footer"></div>
+                {/* <div className="logo-footer"></div> */}
+                <img src={logo} alt="logo" className="logo-footer" />
               </Link>
             </div>
             <div className="contact-info-footer">
