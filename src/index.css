@@ -15,6 +15,14 @@ code {
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  --primary-color: white;
+  --secondary-color: #f7f7f7;
+  --theme-color: #bf9960;
+}
+
+::selection {
+  color: var(--theme-color);
+  background-color: #fdf1d1;
 }
 
 ::-webkit-scrollbar {

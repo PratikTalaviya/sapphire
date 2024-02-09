@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import AboutUs from "./components/AboutUs";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
+import GetInTouch from "./components/GetInTouch";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <GetInTouch />
       <Footer />
     </>
   );

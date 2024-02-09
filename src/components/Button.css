@@ -1,19 +1,19 @@
 .btn {
-  border: 2px solid #e6b31e;
+  border: 2px solid var(--theme-color);
   padding: 0.5rem 1.5rem;
   padding-top: 0.6rem;
   font-size: 1rem;
-  color: #e6b31e;
+  color: var(--theme-color);
   border-radius: 9999px;
   background-color: transparent;
   text-decoration: none;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 /* .btn-link {
   text-decoration: none;
   /* color: lightgoldenrodyellow; */
 .btn:hover {
-  background-color: #e6b31e;
+  background-color: var(--theme-color);
   color: white;
   transition: all 0.4s;
 }
