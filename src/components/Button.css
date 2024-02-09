@@ -1,17 +1,17 @@
 .btn {
   border: 2px solid var(--theme-color);
   padding: 0.5rem 1.5rem;
-  padding-top: 0.6rem;
+  /* padding-top: 0.6rem; */
   font-size: 1rem;
   color: var(--theme-color);
   border-radius: 9999px;
   background-color: transparent;
   text-decoration: none;
+  font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   /* margin-bottom: 2rem; */
 }
-/* .btn-link {
-  text-decoration: none;
-  /* color: lightgoldenrodyellow; */
+
 .btn:hover {
   background-color: var(--theme-color);
   color: white;

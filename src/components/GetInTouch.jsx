@@ -12,7 +12,7 @@ export default function GetInTouch() {
       <div>
         <h1 className="title">Together, let's make magic with architecture.</h1>
         <p>Turning visions into masterpieces, starting anew or enhancing existing ones.</p>
-        <Button name="Get In Touch" />
+        <Button name="Get In Touch" path="/contact" />
       </div>
     </div>
   );
