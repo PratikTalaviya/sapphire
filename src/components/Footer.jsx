@@ -37,7 +37,6 @@ export default function Footer() {
             </div>
             <div className="logo-container-footer">
               <Link to="/">
-                {/* <div className="logo-footer"></div> */}
                 <img src={logo} alt="logo" className="logo-footer" />
               </Link>
             </div>

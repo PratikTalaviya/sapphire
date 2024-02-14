@@ -1,15 +1,16 @@
 .form-container {
-  width: 50%;
+  width: 100%;
+  /* padding: 2rem; */
+
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
-  /* gap: 1rem; */
 }
 
 .form-group {
   position: relative;
-  width: 80%;
+  width: 100%;
   margin-bottom: 20px;
   display: grid;
 }
@@ -31,13 +32,13 @@
   border: none;
   padding-top: 2rem;
   padding-bottom: 0.2rem;
-  border-bottom: 2px solid black;
+  border-bottom: 1.5px solid black;
 }
 
 .form-input:focus {
   outline: none;
   border: none;
-  border-bottom: 2px solid gray;
+  border-bottom: 1.5px solid gray;
 }
 
 /* Style for active state */
@@ -63,4 +64,10 @@
 .custom-toast-body {
   font-family: "Manrope";
   font-size: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+  .form-container {
+    padding: 0;
+  }
 }

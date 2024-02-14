@@ -1,0 +1,59 @@
+.location {
+  width: 30%;
+}
+
+.location-img > h2 {
+  margin: 0;
+  color: var(--secondary-color);
+  font-size: 2.5rem;
+  /* align-self: center; */
+}
+
+.surat {
+  background-image: url(../images/surat.jpg);
+}
+
+.rajkot {
+  background-image: url(../images/rajkot.jpg);
+}
+
+.pune {
+  background-image: url(../images/pune.jpg);
+}
+
+.location-img {
+  width: 100%;
+  height: 15rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+}
+@media screen and (max-width: 650px) and (min-width: 400px) {
+  .address-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .address-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .address-links > div {
+    /* position: absolute;
+    right: 0; */
+    align-self: flex-end;
+  }
+  .location {
+    width: 100%;
+  }
+  .location-img {
+    height: 20rem;
+    background-position: center;
+  }
+}

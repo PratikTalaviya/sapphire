@@ -1,0 +1,32 @@
+.hover-underline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Inherit text color */
+  overflow: hidden; /* Hide overflow to prevent line from pushing other content */
+}
+
+.hover-underline:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.hover-underline > * {
+  pointer-events: none; /* Prevent children from being clickable */
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: scaleX(1); /* Start with full width */
+  transform-origin: left; /* Set transform origin to the left */
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hover-underline:hover .underline {
+  transform: scaleX(0); /* Move to the right */
+  transform-origin: right; /* Change transform origin to the right on hover */
+}

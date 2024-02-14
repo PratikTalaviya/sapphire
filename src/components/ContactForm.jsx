@@ -20,6 +20,8 @@ export default function ContactForm() {
 
   const handleBlur = (e) => {
     const { value, id } = e.target;
+    // const container = e.target.parentNode;
+
     if (!value) {
       e.target.parentNode.classList.remove("active");
       switch (id) {
