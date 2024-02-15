@@ -18,12 +18,7 @@ export default function LocationCard(props) {
         </p>
         <div className="address-links">
           <div>
-            <HoverUnderline
-              text="Get Direction"
-              className="custom-class"
-              // link="https://www.google.com/maps/place/A%2F485,+Tirupati+Society,+Punagam,+Varachha,+Surat,+Gujarat+394530/@21.21486,72.8902751,17z/data=!3m1!4b1!4m6!3m5!1s0x3be04f7b806fc441:0x6102e6e74ac70b07!8m2!3d21.21486!4d72.89285!16s%2Fg%2F11hfk0wf5_?entry=ttu"
-              link={props.mapLink}
-            />
+            <HoverUnderline text="Get Direction" className="custom-class" link={props.mapLink} />
           </div>
           <div>
             <HoverUnderline text="+91 9898928282" className="custom-class" link="tel:+919662549548" />

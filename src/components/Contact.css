@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: row;
   gap: 5rem;
+  margin-bottom: 5rem;
 }
 
 .contact-content {
@@ -89,6 +90,9 @@ iframe {
 }
 
 @media screen and (max-width: 650px) {
+  .contact-container {
+    margin-bottom: 2rem;
+  }
   .contact-content,
   .contact-content-1 {
     width: 100%;

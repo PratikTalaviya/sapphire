@@ -8,10 +8,12 @@ import AboutUs from "./components/AboutUs";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import GetInTouch from "./components/GetInTouch";
+import CustomCursor from "./components/CustomCursor";
 
 function App() {
   return (
     <>
+      <CustomCursor />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

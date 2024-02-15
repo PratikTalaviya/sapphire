@@ -4,6 +4,7 @@ import "./Footer.css";
 import SocialMedia from "./SocialMedia";
 import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
+import HoverUnderline from "./HoverUnderline";
 
 export default function Footer() {
   return (
@@ -41,8 +42,23 @@ export default function Footer() {
               </Link>
             </div>
             <div className="contact-info-footer">
-              <Copywrite className="contact-info" content="+91 9898979797" devloper="" link="" />
-              <Copywrite className="contact-info" content="sapphire.contact@gmail.com" devloper="" link="" />
+              {/* <Copywrite className="contact-info" content="" devloper="+91 9898979797" link="tel:+919662549548" />
+                <Copywrite
+                  className="contact-info"
+                  content=""
+                  devloper="sapphire.contact@gmail.com"
+                  link="mailto:sapphire.contact@gmali.com"
+                /> */}
+              <div>
+                <HoverUnderline text="+91 9898928282" className="contact-info" link="tel:+919662549548" />
+              </div>
+              <div>
+                <HoverUnderline
+                  text="sapphire.contact@gmail.com"
+                  className="contact-info"
+                  link="mailto:sapphire.contact@gmail.com"
+                />
+              </div>
             </div>
           </div>
           <div className="copywrite-container">

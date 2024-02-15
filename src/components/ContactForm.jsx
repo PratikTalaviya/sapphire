@@ -203,9 +203,9 @@ export default function ContactForm() {
       </div>
 
       <div className={`form-group ${phonenumber ? "active" : ""}`}>
-        <label className="form-label">Phone</label>
+        <label className="form-label ">Phone</label>
         <input
-          className="form-input"
+          className="form-input clickable hoverable"
           type="tel"
           id="phonenumber"
           value={phonenumber}

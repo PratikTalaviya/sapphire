@@ -2,7 +2,7 @@
   position: relative;
   display: inline-block;
   text-decoration: none; /* Remove default underline */
-  color: inherit; /* Inherit text color */
+  color: #333333 !important; /* Inherit text color */
   overflow: hidden; /* Hide overflow to prevent line from pushing other content */
 }
 
@@ -20,7 +20,7 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #000;
+  background-color: #333333;
   transform: scaleX(1); /* Start with full width */
   transform-origin: left; /* Set transform origin to the left */
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);

@@ -77,6 +77,7 @@
 .contact-info {
   font-size: 0.9rem;
   font-weight: 500;
+  color: #000 !important;
 }
 
 @media screen and (max-width: 550px) {
