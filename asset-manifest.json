@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d7918246.css",
+    "main.js": "/static/js/main.b7c9ce27.js",
+    "static/js/592.d6fbccea.chunk.js": "/static/js/592.d6fbccea.chunk.js",
+    "static/media/pune.jpg": "/static/media/pune.41695f267d879ddaeccd.jpg",
+    "static/media/surat.jpg": "/static/media/surat.c864207e7ec17809c29e.jpg",
+    "static/media/rajkot.jpg": "/static/media/rajkot.e24d61632e8b3dddf9ac.jpg",
+    "static/media/get-in-touch.svg": "/static/media/get-in-touch.7281cf4a7fdb9ced19a8a6bf5091a47d.svg",
+    "static/media/logo.png": "/static/media/logo.91e52f66b978a6aa7d8e.png",
+    "index.html": "/index.html",
+    "main.d7918246.css.map": "/static/css/main.d7918246.css.map",
+    "main.b7c9ce27.js.map": "/static/js/main.b7c9ce27.js.map",
+    "592.d6fbccea.chunk.js.map": "/static/js/592.d6fbccea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7918246.css",
+    "static/js/main.b7c9ce27.js"
+  ]
+}
