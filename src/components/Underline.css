@@ -1,4 +1,4 @@
-.hover-underline {
+.hover-underline-temp {
   position: relative;
   display: inline-block;
   text-decoration: none; /* Remove default underline */
@@ -6,27 +6,27 @@
   overflow: hidden; /* Hide overflow to prevent line from pushing other content */
 }
 
-.hover-underline:hover {
+.hover-underline-temp:hover {
   text-decoration: none; /* Remove underline on hover */
 }
 
-.hover-underline > * {
+.hover-underline-temp > * {
   pointer-events: none; /* Prevent children from being clickable */
 }
 
-.underline {
+.underline-temp {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 0.085rem;
   background-color: #333333;
-  transform: scaleX(1); /* Start with full width */
-  transform-origin: left; /* Set transform origin to the left */
+  transform: scaleX(0); /* Start with full width */
+  transform-origin: right; /* Set transform origin to the left */
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.hover-underline:hover .underline {
-  transform: scaleX(0); /* Move to the right */
-  transform-origin: right; /* Change transform origin to the right on hover */
+.hover-underline-temp:hover .underline-temp {
+  transform: scaleX(1); /* Move to the right */
+  transform-origin: left; /* Change transform origin to the right on hover */
 }

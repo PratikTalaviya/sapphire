@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./ContactForm.css";
 import emailjs from "emailjs-com";
 import { toast, ToastContainer } from "react-toastify";
@@ -12,7 +12,8 @@ export default function ContactForm() {
   const [nameError, setNameError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [phonenumberError, setPhonenumberError] = useState("");
-  // const [messageError, setMessageError] = useState("");
+
+  const textareaRef = useRef(null);
 
   const handleFocus = (e) => {
     e.target.parentNode.classList.add("active");
@@ -20,8 +21,6 @@ export default function ContactForm() {
 
   const handleBlur = (e) => {
     const { value, id } = e.target;
-    // const container = e.target.parentNode;
-
     if (!value) {
       e.target.parentNode.classList.remove("active");
       switch (id) {
@@ -77,6 +76,16 @@ export default function ContactForm() {
       default:
         break;
     }
+
+    // Adjust textarea height
+    if (id === "message") {
+      textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`;
+      textareaRef.current.style.overflowY = "visible";
+      if (value.trim() === "") {
+        textareaRef.current.style.height = "2rem";
+        textareaRef.current.style.overflowY = "hidden";
+      }
+    }
   };
 
   const serviceId = "service_id2zigw";
@@ -122,6 +131,9 @@ export default function ContactForm() {
 
     if (!phonenumber) {
       setPhonenumberError("Phone number is required");
+      isValid = false;
+    } else if (!isValidPhoneNumber(phonenumber)) {
+      setPhonenumberError("Invalid phone number");
       isValid = false;
     } else {
       setPhonenumberError("");
@@ -183,6 +195,7 @@ export default function ContactForm() {
           onFocus={handleFocus}
           onBlur={handleBlur}
           required
+          autoComplete="off"
         />
         {nameError && <div className="error-message">{nameError}</div>}
       </div>
@@ -198,14 +211,15 @@ export default function ContactForm() {
           onFocus={handleFocus}
           onBlur={handleBlur}
           required
+          autoComplete="off"
         />
         {emailError && <div className="error-message">{emailError}</div>}
       </div>
 
       <div className={`form-group ${phonenumber ? "active" : ""}`}>
-        <label className="form-label ">Phone</label>
+        <label className="form-label">Phone</label>
         <input
-          className="form-input clickable hoverable"
+          className="form-input"
           type="tel"
           id="phonenumber"
           value={phonenumber}
@@ -213,6 +227,7 @@ export default function ContactForm() {
           onFocus={handleFocus}
           onBlur={handleBlur}
           required
+          autoComplete="off"
         />
         {phonenumberError && <div className="error-message">{phonenumberError}</div>}
       </div>
@@ -220,13 +235,14 @@ export default function ContactForm() {
       <div className={`form-group ${message ? "active" : ""}`}>
         <label className="form-label">Message</label>
         <textarea
+          ref={textareaRef}
           className="form-input"
           id="message"
           value={message}
           onChange={handleChange}
           onFocus={handleFocus}
           onBlur={handleBlur}
-          // required
+          required
         ></textarea>
       </div>
 

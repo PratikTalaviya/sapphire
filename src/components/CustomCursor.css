@@ -1,17 +1,26 @@
 .custom-cursor {
   position: fixed;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background-color: var(--theme-color);
+  /* background-color: var(--theme-color); */
   pointer-events: none;
-  opacity: 0.7;
-  transition: width 0.2s, height 0.2s ease;
+  backdrop-filter: invert(100%);
+  opacity: 0.9;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
+  transition: width 0.3s, height 0.3s ease;
   z-index: 10000;
 }
 
 .custom-cursor.hover {
-  width: 45px;
-  height: 45px;
+  width: 70px;
+  height: 70px;
   transform: translate(-40%, -40%);
+}
+
+.custom-cursor.clicked {
+  width: 15px; /* Adjust as needed */
+  height: 15px; /* Adjust as needed */
+  transition: width 0.3s, height 0.3s ease;
 }

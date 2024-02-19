@@ -1,6 +1,6 @@
 import React from "react";
 import "./GetInTouch.css";
-import image from "../images/get-in-touch.svg";
+import image from "../images/getInTouch.svg";
 import Button from "./Button";
 
 export default function GetInTouch() {

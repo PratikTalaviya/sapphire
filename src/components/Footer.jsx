@@ -5,6 +5,7 @@ import SocialMedia from "./SocialMedia";
 import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 import HoverUnderline from "./HoverUnderline";
+import Underline from "./Underline";
 
 export default function Footer() {
   return (
@@ -16,22 +17,22 @@ export default function Footer() {
               <ul className="links-items">
                 <li>
                   <Link to="/services" className="footer-links">
-                    Services
+                    <Underline text="Services" />
                   </Link>
                 </li>
                 <li>
                   <Link to="/projects" className="footer-links">
-                    Projects
+                    <Underline text="Projects" />
                   </Link>
                 </li>
                 <li>
                   <Link to="/contact" className="footer-links">
-                    Contact
+                    <Underline text="Contact" />
                   </Link>
                 </li>
                 <li>
                   <Link to="/aboutus" className="footer-links">
-                    About
+                    <Underline text="About" />
                   </Link>
                 </li>
               </ul>
@@ -42,13 +43,6 @@ export default function Footer() {
               </Link>
             </div>
             <div className="contact-info-footer">
-              {/* <Copywrite className="contact-info" content="" devloper="+91 9898979797" link="tel:+919662549548" />
-                <Copywrite
-                  className="contact-info"
-                  content=""
-                  devloper="sapphire.contact@gmail.com"
-                  link="mailto:sapphire.contact@gmali.com"
-                /> */}
               <div>
                 <HoverUnderline text="+91 9898928282" className="contact-info" link="tel:+919662549548" />
               </div>

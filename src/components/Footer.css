@@ -1,7 +1,5 @@
 .main-footer-container {
-  /* height: 35vh; */
   background-color: var(--primary-color);
-  /* background-image: url(../images/Final.png); */
   background-size: 75vw;
   backdrop-filter: sepia(100%);
   background-position: bottom;
@@ -15,7 +13,6 @@
 .footer-container {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   width: 100%;
 }
 .logo-container-footer,
@@ -24,7 +21,6 @@
   width: 33.333%;
   display: flex;
   flex-direction: column;
-  /* gap: 0.5rem; */
   justify-content: center;
   align-items: center;
 }
@@ -83,10 +79,9 @@
 @media screen and (max-width: 550px) {
   .main-footer-container {
     justify-content: space-between;
-    /* height: 40vh; */
     padding: 2rem 1.2rem 1rem;
     background-size: cover;
-    gap: 2.8rem;
+    gap: 3.5rem;
   }
   .footer-container {
     position: relative;

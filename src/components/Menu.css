@@ -1,4 +1,13 @@
 /* Menu.css */
+.menu-organizer {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5rem;
+  height: 80vh;
+  align-items: center;
+  padding: 5rem;
+  padding-bottom: 0;
+}
 .menu {
   display: flex;
   width: 3rem;
@@ -19,11 +28,17 @@
 .menu-drawer {
   position: fixed;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* justify-content: flex-end; */
   top: -100%;
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 2rem;
+  padding-bottom: 0.7rem;
   background-color: #f7f7f7;
   transition: top 0.3s ease;
   z-index: 1;
@@ -36,20 +51,34 @@
 .menu-drawer ul {
   list-style-type: none;
   padding: 0;
-  margin: 50px 0 0 20px;
+  margin: 0;
+}
+.menu-links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  gap: 3rem;
 }
 
-.list-items-container {
-  position: absolute;
-  width: 45%;
-  top: 4vh;
+.image-section {
+  width: 50%;
 }
+
+.image-section > img {
+  width: 60%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center;
+}
+
 .menu-drawer li .list-item {
+  height: 100%;
   text-decoration: none;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   color: black;
-  font-size: 3rem;
-  line-height: 5rem;
+  font-size: 2.5rem;
+  line-height: 4rem;
 }
 
 .hamburger-menu {
@@ -67,7 +96,7 @@
 .list-item:hover {
   /* text-shadow: rgba(255, 255, 255, 0.4) 0px 5px, rgba(255, 255, 255, 0.3) 0px 10px, rgba(255, 255, 255, 0.2) 0px 15px,
     rgba(255, 255, 255, 0.1) 0px 20px, rgba(255, 255, 255, 0.05) 0px 25px; */
-  text-shadow: 3px 0px 9px rgb(149, 127, 127);
+  color: gray;
 }
 
 .bar {
@@ -94,14 +123,22 @@
   transform: rotate(-45deg) translateY(-0.75rem);
 }
 
-@media screen and (max-width: 600px) {
-  .menu-drawer {
-    justify-content: flex-start;
+.header-socialmedia {
+  align-self: flex-start;
+  gap: 2rem;
+}
+
+.header-socialmedia > a > .icons {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .image-section {
+    width: 85%;
   }
-  .list-items-container {
-    position: absolute;
-    width: 100%;
-    top: 4vh;
-    left: 10vw;
+}
+@media screen and (max-width: 600px) {
+  .display {
+    display: none;
   }
 }

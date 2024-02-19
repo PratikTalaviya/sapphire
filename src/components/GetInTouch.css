@@ -5,23 +5,29 @@
   align-items: center;
   background-color: #f7f7f7;
   /* color: white; */
-  padding: 5rem 5rem;
-  gap: 5rem;
+  padding: 0rem 5rem;
+  padding-left: 0;
+  /* gap: 10rem; */
 }
 .get-in-touch-container > div {
   width: 50%;
-  /* padding: 3rem; */
 }
 .get-in-touch-image {
   width: 100%;
+  position: relative;
+  right: 5rem;
 }
 @media screen and (max-width: 550px) {
   .get-in-touch-container {
     flex-direction: column;
     padding: 2rem;
+    gap: 2rem;
   }
   .get-in-touch-container > div {
     width: 100%;
-    padding: 0;
+  }
+  .get-in-touch-image {
+    position: relative;
+    right: 5rem;
   }
 }

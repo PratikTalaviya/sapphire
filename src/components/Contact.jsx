@@ -50,7 +50,7 @@ export default function Contact() {
   return (
     <>
       <div className="main-container">
-        <div className="contact-container clickable hoverable">
+        <div className="contact-container">
           <div className="contact-content-1">
             <h1 className="title">Designing Beyond Boundaries -Let's Create Your Legacy!</h1>
             <p className="paragraph">

@@ -1,6 +1,6 @@
 .form-container {
   width: 100%;
-  /* padding: 2rem; */
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,14 +25,19 @@
 
 .form-input {
   width: 100%;
-  height: 4rem;
+  height: 2rem;
+  max-height: 6rem;
   font-size: 1.2rem;
   font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", Oxygen, Ubuntu, Cantarell,
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   border: none;
-  padding-top: 2rem;
+  margin-top: 2rem;
   padding-bottom: 0.2rem;
   border-bottom: 1.5px solid black;
+  overflow-y: hidden;
+}
+.form-input[textarea] {
+  height: 4rem;
 }
 
 .form-input:focus {
@@ -55,11 +60,6 @@
   position: absolute;
   bottom: -0.8rem;
 }
-
-/* Optionally, you can style the input fields with errors
-.form-group.error .form-input {
-  border-color: red;
-} */
 
 .custom-toast-body {
   font-family: "Manrope";
