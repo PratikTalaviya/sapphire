@@ -8,7 +8,7 @@ import Copywrite from "./Copywrite";
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [imageSrc, setImageSrc] = useState(
-    "https://plus.unsplash.com/premium_photo-1661902184762-49c2c8ebb787?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8"
+    "https://images.unsplash.com/photo-1524613032530-449a5d94c285?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   ); // Default image source
 
   const handleImageChange = (index) => {
@@ -105,16 +105,31 @@ const Menu = () => {
             <SocialMedia className="header-socialmedia" />
           </div>
           <div className="image-section">
-            {/* Display the image with dynamic src */}
-            <img src={imageSrc} alt="menu" />
+            <img
+              src="https://images.unsplash.com/photo-1694843532972-ad3dc10ba965?q=80&w=1937&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="menu"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1634295618372-107e17dcc8d8?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="menu"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1649249506722-f696e99c2af4?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="menu"
+            />
+            <img
+              src="https://plus.unsplash.com/premium_photo-1693222205691-a87418d7db4e?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="menu"
+            />
+            <img src={imageSrc} className="top-image" alt="menu" />
           </div>
         </div>
         <div className="display">
           <div className="copywrite-container">
-            <div className="copywrite-resizer">
+            <div className="header-align">
               <Copywrite content="© 2024 Sapphire Consultants" devloper="" link="" />
             </div>
-            <div className="copywrite-resizer devloper-align">
+            <div className="header-align align-right">
               <Copywrite
                 content="Designed and Developed by "
                 devloper="Pratik Talaviya"
