@@ -104,7 +104,7 @@ const Menu = () => {
 
             <SocialMedia className="header-socialmedia" />
           </div>
-          <div className="image-section">
+          {/* <div className="image-section">
             <img
               src="https://images.unsplash.com/photo-1694843532972-ad3dc10ba965?q=80&w=1937&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="menu"
@@ -122,7 +122,7 @@ const Menu = () => {
               alt="menu"
             />
             <img src={imageSrc} className="top-image" alt="menu" />
-          </div>
+          </div> */}
         </div>
         <div className="display">
           <div className="copywrite-container">

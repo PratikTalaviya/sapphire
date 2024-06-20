@@ -5,12 +5,15 @@
   align-items: center;
   background-color: #f7f7f7;
   /* color: white; */
-  padding: 0rem 5rem;
-  padding-left: 0;
+  padding: 1.5rem;
+
   /* gap: 10rem; */
 }
 .get-in-touch-container > div {
+  justify-items: center;
+  align-items: center;
   width: 50%;
+  height: 60vh;
 }
 .get-in-touch-image {
   width: 100%;

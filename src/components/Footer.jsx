@@ -37,9 +37,15 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="logo-container-footer">
+            <div className="logo-container-footer mb-[1.5rem]">
               <Link to="/">
-                <img src={logo} alt="logo" className="logo-footer" />
+                {/* <img src={logo} alt="logo" className="logo-footer" /> */}
+                <div className="flex justify-center align-center flex-col">
+                  <h1 className="text-[7.2vh]">Sapphire</h1>
+                  <div className="flex justify-end leading-[1vh]">
+                    <h2 className="text-[2.7vh]">Consultants</h2>
+                  </div>
+                </div>
               </Link>
             </div>
             <div className="contact-info-footer">
