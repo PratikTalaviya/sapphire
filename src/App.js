@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import Services from "../../sapphire/src/components/Services";
+import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import AboutUs from "./components/AboutUs";
