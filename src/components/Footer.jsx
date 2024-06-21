@@ -41,9 +41,9 @@ export default function Footer() {
               <Link to="/">
                 {/* <img src={logo} alt="logo" className="logo-footer" /> */}
                 <div className="flex justify-center align-center flex-col">
-                  <h1 className="text-[7.2vh]">Sapphire</h1>
-                  <div className="flex justify-end leading-[1vh]">
-                    <h2 className="text-[2.7vh]">Consultants</h2>
+                  <h1 className="text-[2.5rem]">Sapphire</h1>
+                  <div className="flex justify-end leading-[0.2rem]">
+                    <h2 className="text-[0.98rem]">Consultants</h2>
                   </div>
                 </div>
               </Link>

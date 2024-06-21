@@ -39,7 +39,7 @@ function Home() {
     <>
       <PreloadImage src={image} onLoad={() => setImageLoaded(true)} />
       <motion.div
-        className="w-full h-[200vh] bg-cover bg-center"
+        className="w-full h-[70vh] md:h-[150vh] lg:h-[200vh] bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: isImageLoaded ? `url(${image})` : "none",
         }}
